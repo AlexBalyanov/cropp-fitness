@@ -290,7 +290,15 @@
   font-style: 16px;
 }
 
-
+.join-us__video-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 30px;
+  background: url("../images/join-us-bg.jpg") center/cover no-repeat var(--color-dark-alternate);
+  
+}
 
 
 
