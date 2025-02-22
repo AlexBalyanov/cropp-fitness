@@ -52,7 +52,6 @@
   background-color: var(--color-light-grey);
 }
 
-
 .button.transparent:active {
   background-color: var(--color-dark-grey);
   color: var(--color-light);
@@ -593,6 +592,10 @@
   column-gap: 62px;
 }
 
+.footer__logo-image {
+  height: auto;
+}
+
 .footer__header {
   grid-template-columns: var(--footerLogoWidth) auto;
 }
@@ -679,19 +682,14 @@
   width: 23px;
 }
 
-
-
+.footer__copyright {
+  font-size: 14px;
+}
 
 .footer__extra {
   padding-block: 15px;
   background-color: var(--color-dark-alternate);
 }
-
-
-
-
-
-
 
 @media (max-width: 1919px) {
     .motivation__card-image {
@@ -779,6 +777,22 @@
 
   .calculate__table tfoot td {
     padding-top: 10px;
+  }
+
+  .footer__main {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .footer__body {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .footer__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
 
@@ -893,5 +907,22 @@
 
   .calculate__table-wrapper::before {
     display: none;
+  }
+
+  .footer__body {
+    grid-template-columns: 1fr ;
+    row-gap: 30px;
+  }
+  
+  .footer-main {
+    padding-top: 50px;
+  }
+
+  .footer__header:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .footer__subscribe:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
